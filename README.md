@@ -1,8 +1,8 @@
-<h1 align="center"> <a href="https://open.spotify.com/user/exll9wa5yql2llqyi1k5h56qm?si=YkkYuaD7SN60DMjXWo7eTQ&utm_source=copy-link" target="_blank"> <img src="https://github.com/mrankitgupta/Spotify-Data-Analysis-using-Python/blob/main/images/social-spotify.svg" alt="Spotify" width="55" height="40"/> </a> Spotify Data Analysis <img src="https://github.com/annesantos1990/spotify_project/assets/166059836/79e9bc2c-1feb-485e-bcf8-8e1b38e7a1f3" alt="Spotify" width="120" height="45"/>  </h1>
+<h1 align="center"> </a> Risk Relative   </h1>
 
-<sub>**Avaliação das músicas mais ouvidas no Spotify em 2023 feita para a gravadora Mix Master**<sub>
+**Avaliação do Risco Relativo dos clientes de um Banco**
 
-**Time responsável pelo projeto**: Maiully Mendoça e Eslaine Santos
+
 ##
 
 <p align="center">
@@ -14,29 +14,24 @@
 
 ## Caso
 
-Em um mercado altamente competitivo, a gravadora Mix Master precisa inserir um novo artista no cenário global da música. Assim, essa gravadora viu a necessidade de tomar decisões estratégicas baseadas em dados.
+Devido a um contexto de redução das taxas de juros no mercado, houve um aumento significativo da demanda por crédito, levando a um aumento de solicitações de empréstimo no banco "Super Caja". 
 
-## Principais Hipóteses
+Devido a sobrecarga a análise manual de cada solicitação e a crescente preocupação com a taxa de inadimplência, o banco sentiu a necessidade de aumenta a pressão para identificar e mitigar os riscos associados ao crédito.
 
-- Músicas com BPM (Batidas Por Minuto) mais altos fazem mais sucesso em termos de número de streams no Spotify.
-- As músicas mais populares no ranking do Spotify também possuem um comportamento semelhante em outras plataformas, como a Deezer.
-- A presença de uma música em um maior número de playlists está correlacionada com um maior número de streams.
-- Artistas com um maior número de músicas no Spotify têm mais streams.
-- As características da música influenciam o sucesso em termos de número de streams no Spotify.
+Para enfrentar esses desafios, propõe-se a automação do processo de análise de crédito utilizando técnicas de análise de dados e ciência de dados. Com o intuito de melhorar a eficiência, precisão e rapidez na avaliação das solicitações de crédito. 
 
  <h2>Objetivo</h2> 
 
-- O objetivo dessa análise é ajudar a gravadora e o artista a tomar decisões baseadas nos dados que aumentem suas chances de ter sucesso nesse mercado
-
-  - Objetivo do analista
-      
-      Validar (refutar ou confirmar) as hipóteses levantadas através da análise de dados e fornecer recomendações estratégicas com base em suas descobertas.
+- Identificar o perfil de cliente com risco de inadiimplência;
+- Desenvolver um score de crédito utilizando técnicas de análise de dados e avaliação do risco relativo. Este score permitirá a classificação dos solicitantes de crédito em categorias distintas de risco, com base na sua probabilidade de inadimplência.
 
 
 ## Ferramentas
-- BigQuery (linguagem SQL): para gerenciamento de dados.
-- Power BI: para visualização de dados.
-- Google Colab (Python): para realizar análises em Python.
+- Gerenciamento dos dados: BigQuery (SQL), Google Colab (Python)
+- Visualização de dados: Looker Studio, Google Colab (Python)
+- Implementação do Modelo: Google Colab (Python)
+- Apresentação dos dados: Google Colab (Python)
+- Ficha técnica: Notion, GitHub
 
 
 ### Biblioteca e Tratamento do Dados
