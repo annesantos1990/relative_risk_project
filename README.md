@@ -37,7 +37,7 @@ Para enfrentar esses desafios, propõe-se a automação do processo de análise 
 ### Biblioteca e Tratamento do Dados
 
 O tratamento e parte das análises dos dados foi feita no *Big Query*.
-Para mais detalhes da biblioteca e do tratamento do dados, basta clicar nesse link: [Clique aqui](https://github.com/annesantos1990/limpezadedados_spotify)
+Para mais detalhes da biblioteca e do tratamento do dados, basta clicar nesse link: [Clique aqui](https://github.com/annesantos1990/limpezadedados_reative_risk/)
 
 ### Visualização dos dados - PowerBi
 Parte dos gráficos que estão apresentados na seção de resultados foi feito no PowerBi. Para acessar o dashboard feito nessa ferramenta, clique no Link abaixo:
