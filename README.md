@@ -7,7 +7,7 @@
 
 <p align="center">
  
-[Caso](#caso)  •  [Principais Hipóteses](#principais-hipóteses)  •  [Objetivo](#objetivo)  •  [Ferramentas](#ferramentas)   •  [Resultados e Discussão](#resultados-e-discussão)  •  [Conclusões](#conclusões)  •  [Recomendações](#recomendações)  •  [Venha nos conhecer!](#venha-nos-conhecer)
+[Caso](#caso)  •  [Objetivo](#objetivo)  •  [Ferramentas](#ferramentas)   •  [Resultados e Discussão](#resultados-e-discussão)  •  [Conclusões](#conclusões)  •  [Recomendações](#recomendações)  •  [LinkedIn](#linkedin)
 
 </p>
 
@@ -40,112 +40,103 @@ O tratamento e parte das análises dos dados foi feita no *Big Query*.
 Para mais detalhes da biblioteca e do tratamento do dados, basta clicar nesse link: [Clique aqui](https://github.com/annesantos1990/limpezadedados_reative_risk/)
 
 ### Visualização dos dados - PowerBi
-Parte dos gráficos que estão apresentados na seção de resultados foi feito no PowerBi. Para acessar o dashboard feito nessa ferramenta, clique no Link abaixo:
-[Clique aqui ou na imagem](https://app.powerbi.com/view?r=eyJrIjoiZmU2ZTdjZTktYWQyOS00YjcwLTgyNDUtODM3ZmRhMDdiMTQ5IiwidCI6ImUwZjY3ODE5LTJmNmYtNDg0Mi1hZjVlLTA5ZjI4Y2U4N2U0NyJ9&pageName=ReportSection566586d215a102c1dbbe)
+Parte dos gráficos que estão apresentados na seção de resultados foi feito no Looker. Para acessar o dashboard feito nessa ferramenta, clique no Link abaixo:
+[Clique aqui ou na imagem](https://lookerstudio.google.com/reporting/f2abbd47-882a-4030-9f30-e8dc170a37fd)
 
 [![Texto Alternativo](https://github.com/annesantos1990/spotify_project/assets/166059836/908e0d4c-dbea-4b4e-8078-6dce037f9265)](https://app.powerbi.com/view?r=eyJrIjoiZmU2ZTdjZTktYWQyOS00YjcwLTgyNDUtODM3ZmRhMDdiMTQ5IiwidCI6ImUwZjY3ODE5LTJmNmYtNDg0Mi1hZjVlLTA5ZjI4Y2U4N2U0NyJ9&pageName=ReportSection566586d215a102c1dbbe)
 
 
 
 ### Análise dos dados - Google Colab
-Para a análise dos dados desse projeto foi utilizado o Google Colab. Para visulizar os códigos utilizados para as análises que serão vista na seção de resultados, acesse o Notebook: [Clique aqui](https://github.com/annesantos1990/spotify_project/blob/bc8bbc84bc77dcbff635e6db280220ea13a2feba/proj2_colaborativo.ipynb           )
+Para a análise dos dados desse projeto foi utilizado o Google Colab. Para visulizar os códigos utilizados para as análises que serão vista na seção de resultados, acesse o Notebook: [Clique aqui](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing)
 
 ## Apresentação do projeto
 Para ver os slides com a apresentação do projeto [clique aqui.](https://github.com/annesantos1990/spotify_project/blob/main/Projeto%20Spotify.pdf)
  
 ## Resultados e Discussão
-A análise detalhada desse projeto com os gráficos e discussões pode ser vista em nossa página pública do Notion: [Clique aqui](https://crystal-haumea-eb9.notion.site/Resultados-e-Conclus-es-dfc2af5e8eef4460ae8428b746c82511?pvs=4)
+A análise detalhada desse projeto com os gráficos e discussões pode ser vista em nossa página pública do Notion: [Clique aqui](https://giddy-shamrock-550.notion.site/Resultados-e-Conclus-es-2099a46cca4e4d98adf88ccde83260a1?pvs=4)
 
 
 Mas aqui, vou fazer um resumo dos principais resultados encontrados:
+### Informações Gerais
 
-**Análise Geral:**
+- **Adimplência e Inadimplência**:
+    - Porcentagem de Adimplentes: 98,25%
+    - Porcentagem de Inadimplentes: 1,75%
+- **Perfil Socioeconômico Predominante**:
+    - Gênero: Masculino (60%)
+    - Faixa Etária: Geração X (44 a 59 anos) (38,33%)
+    - Salário: R$2.824,00 a R$5.648,00 (47,47%)
+    - Número de Dependentes: 1 dependente (60,55%)
+- **Grupos com Maior Taxa de Inadimplência**:
+    - Faixa Etária: Millenials
+    - Salário: <= R$2.824,00
+    - Número de Dependentes: 7 dependentes
+- **Perfil Financeiro Predominante**:
+    - Tipo de Empréstimos: Imobiliários ou outros (62,87%)
+    - Índice de Endividamento: Baixo (62,01%)
+    - Total de Empréstimos: 6 empréstimos (9,19%)
+- **Grupo com Maior Taxa de Inadimplência**:
+    - Total de Empréstimos: 2 empréstimos
 
-→ Das músicas mais ouvidas em 2023, a maioria foi lançada após 2019, sugerindo uma preferência por músicas mais recentes.
+### Testando Hipóteses
+    Para o teste dessas hipóteses, cada uma das variáveis foram separadas em 4 grupos diferentes. Para verificar  como foi feita a separação dos grupos acessar ....... e para ver os principais grupos acessar os [Resultados](https://giddy-shamrock-550.notion.site/Resultados-e-Conclus-es-2099a46cca4e4d98adf88ccde83260a1?pvs=4)
 
-→ Houve um aumento significativo nos streams de músicas lançadas após 2017 em comparação com aquelas lançadas anteriormente.
+1. **Idade e Risco de Inadimplência**:
+    - Clientes mais jovens (21 a 42 anos e 42 a 52 anos) apresentam maior risco de inadimplência.
+    - Possivelmente, a menor estabilidade financeira e experiência de crédito contribuem para o maior risco nesse grupo etário.
+2. **Número de Empréstimos e Risco de Inadimplência**:
+    - Clientes com 1 a 5 e 5 a 8 empréstimos apresentam maior risco, contrariando a hipótese inicial de que mais empréstimos resultariam em maior risco.
+    - A gestão eficaz da dívida parece ser mais crucial do que a quantidade de empréstimos na previsão de inadimplência, já que mesmo pessoas que pegam mais emprétimos tem uma menor probabilidade de risco de inadimplência.
+3. **Atrasos no Pagamento e Risco de Inadimplência**:
+    - Atrasos superiores a 90 dias são fortes indicadores de inadimplência futura.
+    - A pontualidade nos pagamentos é crítica para avaliar a saúde financeira do cliente.
 
-→ As músicas lançadas recentemente são divulgadas extensivamente nas redes sociais e plataformas online, o que pode aumentar seu tempo nas listas de tendências e sua popularidade. 
+### Outras Observações
 
-**Top 10 Artistas e Músicas:**
-
-→ Taylor Swift lidera tanto em número de músicas quanto em streams.
-
-→ 6 das 10 músicas mais ouvidas são colaborações entre artistas.
-
-**Streams por Mês de Lançamento:**
-
-→ Músicas lançadas em janeiro e em maio se destacam.
-
-→ O que pode estar associado a estratégias de lançamento para coincidir com eventos sazonais, como antecipação dos festivais de verão em países nórdicos e uma maior abertura a novidades no mês de janeiro.
+- **Último Salário**: Salários menores que R$3.944,00 apresentam maior risco de inadimplência.
+- **Número de Dependentes**: Pessoas com um ou mais dependentes têm maior risco.
+- **Índice de Endividamento**: Índices acima de 0,36 indicam maior risco.
+- 
+**Salário, número de dependentes e índice de endividamento são fatores críticos na previsão do risco de inadimplência.**
 
 
-**Hipóteses:**
+### Modelos de Classificação
 
-   **Correlação Forte:**
-
- Músicas presentes em muitas playlists têm mais streams:
-  - O que parece natural, já que o esperado é que as músicas que são colocadas em mais playlists sejam mais vistas
-  - Isso reforça a importância de estratégias que visem aumentar a inclusão de músicas em playlists podem potencializar seu desempenho em termos de streams. Isso pode envolver campanhas de divulgação direcionadas a curadores de playlists (4).
-Artistas com mais músicas no Spotify tendem a acumular mais streams:
-  -  Fortalece a ideia de que os artistas que buscam aumentar sua audiência e obter mais sucesso na carreira musical devem realizar lançamentos frequentes de músicas.
-
-**Correlação Moderada:**
-
-As músicas mais populares no ranking do Spotify  possui uma correlação moderada com o ranking em outras plataformas como Deezer:
-
-- Diversos fatores podem influenciar a popularidade de uma música em cada plataforma, incluindo preferências de público-alvo, estratégias de marketing, algoritmos de recomendação e promoção específica em cada plataforma. Portanto, enquanto pode haver uma tendência geral de que músicas populares em uma plataforma também tenham uma presença significativa em outras, essa relação não é determinística e varia dependendo de diversos contextos e condições específicas de cada plataforma e do comportamento do público.
-
-**Correlação Fraca:**
-As características da música não influenciam o sucesso em termos de streams no Spotify:
-
-- Isso indica que, embora esses elementos sejam importantes para o estilo e identidade musical de um artista, a popularidade das músicas não parece ser determinada exclusivamente por suas características musicais, e outros fatores podem estar desempenhando um papel mais significativo na determinação do sucesso das faixas.
-   
-
+- **Score de Crédito**:
+  - Foi obtido um modelo de classificação com base no risco relativo.
+  - Essa classificação contava com um ponto de corte no qual clientes com valores de score acima de 6 eram considerados "Maus Pagadores" e abaixo que 6 "Bons Pagadores"
+  - Modelo apresentou limitações para classificar os "Maus Pagadores", apresentando baixo índice de acerto para esse grupo.
+- **Regressão Logística**:
+    -  modelo de regressão logística, ajustado para desbalanceamento das classes (class_weight='balanced'), mostrou melhores resultados.
+    - Resultados: Recall de 0,95 e baixos falsos positivos.
+    - Modelo eficaz em detectar potenciais inadimplentes e minimizar erros na classificação.
 
 ## Conclusões
-A partir das análises realizadas, identificamos os principais fatores que parecem influenciar a popularidade das músicas no Spotify:
+- **Idade e Risco de Inadimplência**: Clientes mais jovens, têm um risco relativo maior de inadimplência, devido à falta de estabilidade financeira e experiência de crédito.
+- **Gestão de Dívidas vs. Número de Empréstimos**: Contrariando a expectativa inicial, a quantidade absoluta de empréstimos não correlaciona diretamente com o risco de inadimplência. Gestão eficaz da dívida é mais determinante.
+- **Atrasos nos Pagamentos**: Atrasos superiores a 90 dias são fortes indicadores de inadimplência futura, destacando a importância da pontualidade nos pagamentos como indicador de responsabilidade financeira.
+- **Fatores de Risco Financeiro**: Salários mais baixos, maior número de dependentes e índice de endividamento elevado estão associados a um maior risco de inadimplência, evidenciando a importância da estabilidade financeira na capacidade de pagamento.
+- **Desempenho do Modelo**: O modelo de regressão logística, especialmente com a técnica de *Class Weight*, mostrou-se eficaz na detecção de potenciais inadimplentes, em contraste com o modelo baseado no risco relativo que apresentou baixo desempenho.
 
-- Quantidade de músicas que um artista lança;
-    - A quantidade de músicas lançadas por um artista e sua presença em playlists emergiram como elementos cruciais associados à popularidade das faixas.
-- Estar em uma maior parte das playlists aumenta a probabilidade de alcançar um público mais amplo e, consequentemente, mais streams.
-
-Por outro lado, observamos que alguns fatores não demonstraram ser tão determinantes para a popularidade das músicas no Spotify:
-
-- As características individuais das músicas, não apresentaram uma correlação significativa com a quantidade de streams. Isso indica que, embora esses elementos possam contribuir para o estilo e identidade musical de uma faixa, eles não são os principais impulsionadores de sua popularidade em plataformas de streaming.
-- A época do ano não foi diretamente relacionada à popularidade das músicas. Isso sugere que outros fatores, além do calendário sazonal, desempenham um papel mais significativo na determinação do sucesso das faixas.
 
 ## Recomendações
-Desenvolver uma Estratégia de Lançamento: Planejar e executar lançamentos regulares de músicas, mantendo uma presença consistente no mercado musical.
-
-• Networking com Curadores de Playlists: Entrar em contato com curadores de playlists relevantes e promover ativamente suas músicas para inclusão em playlists populares.
-
-• Diversificar a Presença em Plataformas: Além do Spotify, considerar a promoção e distribuição da música em outras plataformas de streaming para alcançar um público mais amplo.
-
-• Considerar a diversificação da presença em outras plataformas de streaming além do Spotify, aproveitando a associação moderada entre as diferentes plataformas para expandir o alcance do público.
-
-• Enfatizar a qualidade e autenticidade das músicas, em vez de se concentrar em características específicas que não demonstraram ter um impacto direto na popularidade.
-
-• Explorar oportunidades de colaboração e parceria com outros artistas de forma equilibrada, evitando sobrecarregar as faixas com um número excessivo de colaboradores.
+- Implementar políticas específicas de mitigação de risco para clientes mais jovens, como requisitos de garantia mais rigorosos ou limites de crédito mais baixos para novas linhas de crédito.
+- Implementar medidas específicas para clientes com salários menores, incluindo limites de crédito mais baixos e condições de pagamento mais flexíveis para reduzir o risco de inadimplência.
+- Ao invés de focar no número absoluto de empréstimos, o banco deve considerar a capacidade de gerenciamento de dívidas dos clientes. Isso pode incluir uma análise mais detalhada do histórico de pagamento e da proporção de renda comprometida com dívidas.
+- Estabelecer um sistema de alerta para monitorar atrasos nos pagamentos superiores a 90 dias. Clientes que atingirem esse marco devem ser alvo de intervenções preventivas, como planos de reestruturação de dívida ou aconselhamento financeiro.
+- Utilizar o modelo de classificação codificado nesse projeto para poder avaliar futuros clientes e os que eles já possuem para verificar o risco de inadimplência desses clientes.
 
 ## Limitações
-Muitos fatores podem influenciar o número de streams, e muitos deles são externos ao Spotify, o que não é possível avaliar devido aos dados serem quase que exclusivamente provenientes dessa plataforma, com apenas algumas outras variáveis provenientes de plataformas de menor destaque como Deezer, Apple e Shazam.
+1. **Variáveis Limitadas**: Pode haver outras variáveis relevantes que não foram consideradas neste estudo, como histórico de crédito detalhado, dados socioeconômicos mais específicos dos clientes, entre outros.
+2. **Temporalidade dos Dados**: Os dados podem não refletir mudanças recentes nas condições econômicas ou comportamentais dos clientes, o que pode limitar a capacidade do modelo de prever comportamentos futuros.
 
-Por isso, investigar a influência de fatores externos é importante. Como exemplo, podemos considerar o impacto de ouvir um clipe no YouTube ou em outras redes sociais na quantidade de vezes que uma música será reproduzida no Spotify.
 
-Além disso, restringir os dados apenas às músicas mais ouvidas em um único ano pode limitar a generalização dos resultados, pois não considera a diversidade e a evolução do cenário musical ao longo do tempo
 
 ### Links das referências:
-(1) https://newsroom.spotify.com/company-info/
-(2) https://newsroom.spotify.com/2023-05-24/crossover-collaborations-genre-collabs-streaming-data-spotify/
-(3) https://blog.symphonic.com/2024/01/11/best-and-worst-months-to-release-music/
-(4) [https://newmusicbrasil.blog/2022/09/16/saiba-o-que-e-e-o-porque-a-playlist-de-curadoria-e-tao-importante/#:~:text=Um curador é o responsável,sentido estar dentro da playlist](https://newmusicbrasil.blog/2022/09/16/saiba-o-que-e-e-o-porque-a-playlist-de-curadoria-e-tao-importante/#:~:text=Um%20curador%20%C3%A9%20o%20respons%C3%A1vel,sentido%20estar%20dentro%20da%20playlist).
 
-## Venha nos conhecer!
 
-Quer saber mais sobre as autoras desse projeto? Acesse o nosso LinkedIn:
-
-https://www.linkedin.com/in/maiully-data-analyst/
+## LinkedIn
 
 https://www.linkedin.com/in/eslaine-santos-e-santos-46159a28/
 
