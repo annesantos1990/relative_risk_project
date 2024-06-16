@@ -86,7 +86,7 @@ Mas aqui, vou fazer um resumo dos principais resultados encontrados:
     - Total de Empréstimos: 2 empréstimos
 
 ### Testando Hipóteses
-   Para o teste dessas hipóteses, cada uma das variáveis foram separadas em 4 grupos diferentes. Para verificar  como foi feita a separação dos grupos acessar ....... e para ver os principais grupos acessar os [Resultados](https://giddy-shamrock-550.notion.site/Resultados-e-Conclus-es-2099a46cca4e4d98adf88ccde83260a1?pvs=4)
+   Para o teste dessas hipóteses, cada uma das variáveis foram separadas em 4 grupos diferentes. Para verificar como foi feita a separação dos grupos e os principais grupos, acessar [esse repositório com os detalhes dos métodos e técnicas empregados](https://github.com/annesantos1990/methods_techniques_risk_relative/) ou se quer somente ver com mais detalhes esses resultados [acessar o Notion](https://giddy-shamrock-550.notion.site/Resultados-e-Conclus-es-2099a46cca4e4d98adf88ccde83260a1?pvs=4).
 
 1. **Idade e Risco de Inadimplência**:
     - Clientes mais jovens (21 a 42 anos e 42 a 52 anos) apresentam maior risco de inadimplência.
@@ -103,7 +103,7 @@ Mas aqui, vou fazer um resumo dos principais resultados encontrados:
 - **Último Salário**: Salários menores que R$3.944,00 apresentam maior risco de inadimplência.
 - **Número de Dependentes**: Pessoas com um ou mais dependentes têm maior risco.
 - **Índice de Endividamento**: Índices acima de 0,36 indicam maior risco.
-- 
+  
 **Salário, número de dependentes e índice de endividamento são fatores críticos na previsão do risco de inadimplência.**
 
 
@@ -135,91 +135,18 @@ Mas aqui, vou fazer um resumo dos principais resultados encontrados:
 
 ## Limitações
 1. **Variáveis Limitadas**: Pode haver outras variáveis relevantes que não foram consideradas neste estudo, como histórico de crédito detalhado, dados socioeconômicos mais específicos dos clientes, entre outros.
-2. **Temporalidade dos Dados**: Os dados podem não refletir mudanças recentes nas condições econômicas ou comportamentais dos clientes, o que pode limitar a capacidade do modelo de prever comportamentos futuros.
+2. **Temporalidade dos Dados**: Os dados não refletem mudanças recentes nas condições econômicas ou comportamentais dos clientes, o que pode limitar a capacidade do modelo de prever comportamentos futuros.
 
 
 
 ##  Implementando o Sistema de Classificação
     
-   Interface com a implementação do modelo de classificação dos clientes como bons ou maus pagadores feito no meu [Notebook do Google Colab](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing/) (Acesse a seção **Implementando o modelo**).
+   Foi elaborada no Google Colab, uma interface com a implementação do modelo de classificação dos clientes como bons ou maus pagadores: [Notebook do Google Colab](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing/) (Acesse a seção **Implementando o modelo**).
     
-   Código:
+       
+   **Detalhes da Interface:**
     
-    ```python
-    # Salvando o modelo
-    import joblib
-    
-    # Treine seu modelo (supondo que já tenha feito isso)
-    model.fit(X_train, y_train)
-    
-    # Salve o modelo
-    joblib.dump(model, 'model.pkl')
-    ```
-    
-    ```python
-    import pandas as pd
-    import joblib
-    import ipywidgets as widgets
-    from IPython.display import display
-    
-    # Carregar o modelo salvo
-    model = joblib.load('model.pkl')
-    
-    # Função para fazer a previsão
-    def classify_customer(age, last_month, number_dependents, total_loan, total_90_days_overdue, total_lines, debt_ratio):
-        new_data = pd.DataFrame({
-            'age': [age],
-            'last_month': [last_month],
-            'number_dependents': [number_dependents],
-            'total_loan': [total_loan],
-            'total_90_days_overdue': [total_90_days_overdue],
-            'total_lines': [total_lines],
-            'debt_ratio': [debt_ratio]
-        })
-        # Certificando de que as colunas estão na mesma ordem e têm os mesmos nomes que foram usadas durante o treinamento
-        new_data = new_data[model.feature_names_in_]
-        prediction = model.predict(new_data)
-        result = "Risco de Inadimplência" if prediction[0] == 1 else "Sem Risco de Inadimplência"
-        print(f"Previsão: {result}")
-    
-    # Criar widgets
-    age = widgets.FloatText(description='Idade:', min=18, max=100, value=30)
-    last_month = widgets.FloatText(description='Último Salário:', min=1, max=100000, value=1)
-    number_dependents = widgets.FloatText(description='Dependentes:', min=0, max=10, value=2)
-    total_loan = widgets.FloatText(description='Total de Empréstimos:', value=5000)
-    total_90_days_overdue = widgets.FloatText(description='90+ Dias Atraso:', min=0, max=100, value=0)
-    total_lines = widgets.FloatText(description='Linhas Totais:', min=1, max=20, value=3)
-    debt_ratio = widgets.FloatText(description='Índice de Endividamento:', min=0.0, max=100.0, step=0.01, value=0.3)
-    
-    # Botão para fazer a previsão
-    button = widgets.Button(description="Classificar Cliente")
-    
-    # Chamar a função quando o botão é clicado
-    def on_button_clicked(b):
-        classify_customer(age.value, last_month.value, number_dependents.value, total_loan.value, total_90_days_overdue.value, total_lines.value, debt_ratio.value)
-    
-    button.on_click(on_button_clicked)
-    
-    # Mostrar widgets
-    display(age, last_month, number_dependents, total_loan, total_90_days_overdue, total_lines, debt_ratio, button)
-    
-    # Debug: Imprimir as colunas do conjunto de treinamento e as do new_data
-    #print(model.feature_names_in_)
-    new_data = pd.DataFrame({
-        'age': [age.value],
-        'last_month': [last_month.value],
-        'number_dependents': [number_dependents.value],
-        'total_loan': [total_loan.value],
-        'total_90_days_overdue': [total_90_days_overdue.value],
-        'total_lines': [total_lines.value],
-        'debt_ratio': [debt_ratio.value]
-    })
-    #print(new_data.columns)
-    ```
-    
-   **Interface:**
-    
-   Na interface, é possível colocar as informações do cliente e ao apertar o botão **Classificar Cliente,** o programa classifica o cliente em “Risco de Inadimplência” e “Sem Risco de Inadimplencia”
+   Na interface, é possível colocar as informações do cliente e ao apertar o botão **Classificar Cliente,** o programa classifica o cliente em “Risco de Inadimplência” ou “Sem Risco de Inadimplência”
     
    ![interface](https://github.com/annesantos1990/relative_risk_project/assets/166059836/c1c9c667-4b77-448c-8f65-fe820b3ea211)
 
