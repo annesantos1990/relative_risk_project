@@ -139,7 +139,89 @@ Mas aqui, vou fazer um resumo dos principais resultados encontrados:
 
 
 
-### Links das referências:
+##  Implementando o Sistema de Classificação
+    
+   Interface com a implementação do modelo de classificação dos clientes como bons ou maus pagadores feito no https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing (clique no link ao lado e acesse a seção **Implementando o modelo**).
+    
+   Código:
+    
+    ```python
+    # Salvando o modelo
+    import joblib
+    
+    # Treine seu modelo (supondo que já tenha feito isso)
+    model.fit(X_train, y_train)
+    
+    # Salve o modelo
+    joblib.dump(model, 'model.pkl')
+    ```
+    
+    ```python
+    import pandas as pd
+    import joblib
+    import ipywidgets as widgets
+    from IPython.display import display
+    
+    # Carregar o modelo salvo
+    model = joblib.load('model.pkl')
+    
+    # Função para fazer a previsão
+    def classify_customer(age, last_month, number_dependents, total_loan, total_90_days_overdue, total_lines, debt_ratio):
+        new_data = pd.DataFrame({
+            'age': [age],
+            'last_month': [last_month],
+            'number_dependents': [number_dependents],
+            'total_loan': [total_loan],
+            'total_90_days_overdue': [total_90_days_overdue],
+            'total_lines': [total_lines],
+            'debt_ratio': [debt_ratio]
+        })
+        # Certificando de que as colunas estão na mesma ordem e têm os mesmos nomes que foram usadas durante o treinamento
+        new_data = new_data[model.feature_names_in_]
+        prediction = model.predict(new_data)
+        result = "Risco de Inadimplência" if prediction[0] == 1 else "Sem Risco de Inadimplência"
+        print(f"Previsão: {result}")
+    
+    # Criar widgets
+    age = widgets.FloatText(description='Idade:', min=18, max=100, value=30)
+    last_month = widgets.FloatText(description='Último Salário:', min=1, max=100000, value=1)
+    number_dependents = widgets.FloatText(description='Dependentes:', min=0, max=10, value=2)
+    total_loan = widgets.FloatText(description='Total de Empréstimos:', value=5000)
+    total_90_days_overdue = widgets.FloatText(description='90+ Dias Atraso:', min=0, max=100, value=0)
+    total_lines = widgets.FloatText(description='Linhas Totais:', min=1, max=20, value=3)
+    debt_ratio = widgets.FloatText(description='Índice de Endividamento:', min=0.0, max=100.0, step=0.01, value=0.3)
+    
+    # Botão para fazer a previsão
+    button = widgets.Button(description="Classificar Cliente")
+    
+    # Chamar a função quando o botão é clicado
+    def on_button_clicked(b):
+        classify_customer(age.value, last_month.value, number_dependents.value, total_loan.value, total_90_days_overdue.value, total_lines.value, debt_ratio.value)
+    
+    button.on_click(on_button_clicked)
+    
+    # Mostrar widgets
+    display(age, last_month, number_dependents, total_loan, total_90_days_overdue, total_lines, debt_ratio, button)
+    
+    # Debug: Imprimir as colunas do conjunto de treinamento e as do new_data
+    #print(model.feature_names_in_)
+    new_data = pd.DataFrame({
+        'age': [age.value],
+        'last_month': [last_month.value],
+        'number_dependents': [number_dependents.value],
+        'total_loan': [total_loan.value],
+        'total_90_days_overdue': [total_90_days_overdue.value],
+        'total_lines': [total_lines.value],
+        'debt_ratio': [debt_ratio.value]
+    })
+    #print(new_data.columns)
+    ```
+    
+   **Interface:**
+    
+   Na interface, é possível colocar as informações do cliente e ao apertar o botão **Classificar Cliente,** o programa classifica o cliente em “Risco de Inadimplência” e “Sem Risco de Inadimplencia”
+    
+    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/75dcc154-fd1d-4af5-b505-98330c057cd2/7840746a-9385-42c3-9b8a-f2707ecba8ca/47806b13-91a5-45ab-94d4-0d7e35bc5c71.png)
 
 
 ## LinkedIn
