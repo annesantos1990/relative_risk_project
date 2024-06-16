@@ -40,7 +40,8 @@ A limpeza, tratamento dos dados e parte das análises dos dados foi feita pelo *
 Para mais detalhes da biblioteca e do tratamento do dados, basta clicar nesse link: [Clique aqui](https://github.com/annesantos1990/limpezadedados_reative_risk/)
 
 ## Métodos e Técnicas
-Para visualizar como foi obtido o risco relativo para diferentes grupos com base nas principais variáveis desse projeto, acesse:[Clique aqui]()
+Para visualizar como foi obtido o risco relativo para diferentes grupos com base nas principais variáveis desse projeto, [Clique aqui](https://github.com/annesantos1990/methods_techniques_risk_relative)
+
 Nesse repositório, além da técnica utilizada para o cálculo do risco relativo, também encontrará:
 - A técnica utilizada para classificar os clientes com base no seu score de risco;
 - O modelo de regressão logística.
@@ -53,7 +54,7 @@ Parte dos gráficos que estão apresentados na seção de resultados foi feito n
 
 
 ### Análise dos dados - Google Colab
-Várias análises e visualizações desse projeto foi feito no Google Colab. Para visulizar os códigos utilizados para alguns dos resultados que podem ser vista na seção de resultados, acesse o Notebook: [Clique aqui](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing)
+Várias análises e visualizações desse projeto foi feito no Google Colab. Para visulizar os códigos utilizados para alguns dos resultados que podem ser vista na seção de resultados, acesse o Notebook: [Clique aqui](https://github.com/annesantos1990/relative_risk_project/blob/main/Projeto_Risco_Relativo_Eslaine.ipynb)
 
 ## Apresentação do projeto
 Para ver os slides com a apresentação do projeto [clique aqui.](https://github.com/annesantos1990/spotify_project/blob/main/Projeto%20Spotify.pdf)
@@ -85,7 +86,7 @@ Mas aqui, vou fazer um resumo dos principais resultados encontrados:
     - Total de Empréstimos: 2 empréstimos
 
 ### Testando Hipóteses
-    Para o teste dessas hipóteses, cada uma das variáveis foram separadas em 4 grupos diferentes. Para verificar  como foi feita a separação dos grupos acessar ....... e para ver os principais grupos acessar os [Resultados](https://giddy-shamrock-550.notion.site/Resultados-e-Conclus-es-2099a46cca4e4d98adf88ccde83260a1?pvs=4)
+   Para o teste dessas hipóteses, cada uma das variáveis foram separadas em 4 grupos diferentes. Para verificar  como foi feita a separação dos grupos acessar ....... e para ver os principais grupos acessar os [Resultados](https://giddy-shamrock-550.notion.site/Resultados-e-Conclus-es-2099a46cca4e4d98adf88ccde83260a1?pvs=4)
 
 1. **Idade e Risco de Inadimplência**:
     - Clientes mais jovens (21 a 42 anos e 42 a 52 anos) apresentam maior risco de inadimplência.
