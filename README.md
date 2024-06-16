@@ -22,7 +22,7 @@ Para enfrentar esses desafios, propõe-se a automação do processo de análise 
 
  <h2>Objetivo</h2> 
 
-- Identificar o perfil de cliente com risco de inadiimplência;
+- Identificar o perfil de cliente com risco de inadimplência;
 - Desenvolver um score de crédito utilizando técnicas de análise de dados e avaliação do risco relativo. Este score permitirá a classificação dos solicitantes de crédito em categorias distintas de risco, com base na sua probabilidade de inadimplência.
 
 
@@ -39,7 +39,7 @@ Para enfrentar esses desafios, propõe-se a automação do processo de análise 
 O tratamento e parte das análises dos dados foi feita no *Big Query*.
 Para mais detalhes da biblioteca e do tratamento do dados, basta clicar nesse link: [Clique aqui](https://github.com/annesantos1990/limpezadedados_reative_risk/)
 
-### Visualização dos dados - PowerBi
+### Visualização dos dados - Looker Studio
 Parte dos gráficos que estão apresentados na seção de resultados foi feito no Looker. Para acessar o dashboard feito nessa ferramenta, clique no Link abaixo:
 [Clique aqui ou na imagem](https://lookerstudio.google.com/reporting/f2abbd47-882a-4030-9f30-e8dc170a37fd)
 
@@ -48,7 +48,7 @@ Parte dos gráficos que estão apresentados na seção de resultados foi feito n
 
 
 ### Análise dos dados - Google Colab
-Para a análise dos dados desse projeto foi utilizado o Google Colab. Para visulizar os códigos utilizados para as análises que serão vista na seção de resultados, acesse o Notebook: [Clique aqui](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing)
+Várias análises e visualizações desse projeto foi feito no Google Colab. Para visulizar os códigos utilizados para alguns dos resultados que podem ser vista na seção de resultados, acesse o Notebook: [Clique aqui](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing)
 
 ## Apresentação do projeto
 Para ver os slides com a apresentação do projeto [clique aqui.](https://github.com/annesantos1990/spotify_project/blob/main/Projeto%20Spotify.pdf)
