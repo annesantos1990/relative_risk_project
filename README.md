@@ -34,10 +34,16 @@ Para enfrentar esses desafios, propõe-se a automação do processo de análise 
 - Ficha técnica: Notion, GitHub
 
 
-### Biblioteca e Tratamento do Dados
+## Biblioteca e Tratamento do Dados
 
-O tratamento e parte das análises dos dados foi feita no *Big Query*.
+A limpeza, tratamento dos dados e parte das análises dos dados foi feita pelo *Big Query*.
 Para mais detalhes da biblioteca e do tratamento do dados, basta clicar nesse link: [Clique aqui](https://github.com/annesantos1990/limpezadedados_reative_risk/)
+
+## Métodos e Técnicas
+Para visualizar como foi obtido o risco relativo para diferentes grupos com base nas principais variáveis desse projeto, acesse:[Clique aqui]()
+Nesse repositório, além da técnica utilizada para o cálculo do risco relativo, também encontrará:
+- A técnica utilizada para classificar os clientes com base no seu score de risco;
+- O modelo de regressão logística.
 
 ### Visualização dos dados - Looker Studio
 Parte dos gráficos que estão apresentados na seção de resultados foi feito no Looker. Para acessar o dashboard feito nessa ferramenta, clique no Link abaixo:
