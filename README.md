@@ -141,7 +141,7 @@ Mas aqui, vou fazer um resumo dos principais resultados encontrados:
 
 ##  Implementando o Sistema de Classificação
     
-   Interface com a implementação do modelo de classificação dos clientes como bons ou maus pagadores feito no https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing (clique no link ao lado e acesse a seção **Implementando o modelo**).
+   Interface com a implementação do modelo de classificação dos clientes como bons ou maus pagadores feito no meu [Notebook do Google Colab](https://colab.research.google.com/drive/1UTQUppbQ1UxoRsXbzcXoNZf4f_LWFN_I?usp=sharing/) (Acesse a seção **Implementando o modelo**).
     
    Código:
     
@@ -221,7 +221,7 @@ Mas aqui, vou fazer um resumo dos principais resultados encontrados:
     
    Na interface, é possível colocar as informações do cliente e ao apertar o botão **Classificar Cliente,** o programa classifica o cliente em “Risco de Inadimplência” e “Sem Risco de Inadimplencia”
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/75dcc154-fd1d-4af5-b505-98330c057cd2/7840746a-9385-42c3-9b8a-f2707ecba8ca/47806b13-91a5-45ab-94d4-0d7e35bc5c71.png)
+   ![interface](https://github.com/annesantos1990/relative_risk_project/assets/166059836/c1c9c667-4b77-448c-8f65-fe820b3ea211)
 
 
 ## LinkedIn
