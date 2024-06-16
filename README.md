@@ -88,15 +88,19 @@ Mas aqui, vou fazer um resumo dos principais resultados encontrados:
 ### Testando Hipóteses
    Para o teste dessas hipóteses, cada uma das variáveis foram separadas em 4 grupos diferentes. Para verificar como foi feita a separação dos grupos e os principais grupos, acessar [esse repositório com os detalhes dos métodos e técnicas empregados](https://github.com/annesantos1990/methods_techniques_risk_relative/) ou se quer somente ver com mais detalhes esses resultados [acessar o Notion](https://giddy-shamrock-550.notion.site/Resultados-e-Conclus-es-2099a46cca4e4d98adf88ccde83260a1?pvs=4).
 
-1. **Idade e Risco de Inadimplência**:
-    - Clientes mais jovens (21 a 42 anos e 42 a 52 anos) apresentam maior risco de inadimplência.
+1. **Hipótese 1: Os mais jovens correm um risco maior de não pagamento:**
+    - Clientes mais jovens (21 a 42 anos) e não só eles (42 a 52 anos) apresentam maior risco de inadimplência.
     - Possivelmente, a menor estabilidade financeira e experiência de crédito contribuem para o maior risco nesse grupo etário.
-2. **Número de Empréstimos e Risco de Inadimplência**:
-    - Clientes com 1 a 5 e 5 a 8 empréstimos apresentam maior risco, contrariando a hipótese inicial de que mais empréstimos resultariam em maior risco.
-    - A gestão eficaz da dívida parece ser mais crucial do que a quantidade de empréstimos na previsão de inadimplência, já que mesmo pessoas que pegam mais emprétimos tem uma menor probabilidade de risco de inadimplência.
-3. **Atrasos no Pagamento e Risco de Inadimplência**:
+
+2. **Hipótese 2: Pessoas com mais empréstimos ativos correm maior risco de serem maus pagadores:**
+    - Refutada!
+    - Clientes com + de 9 empréstimos possuem um menor risco de inadimplência, contrariando a hipótese inicial de que mais empréstimos resultariam em maior risco.
+    - Possivelmente, essas pessoas possuem uma gestão financeira mais eficaz permitindo que paguem seus empréstimos.
+      
+3. **Hipótese 3: Pessoas que atrasaram seus pagamentos por mais de 90 dias correm maior risco de serem maus pagadores:**
+    - Confirmada!
     - Atrasos superiores a 90 dias são fortes indicadores de inadimplência futura.
-    - A pontualidade nos pagamentos é crítica para avaliar a saúde financeira do cliente.
+    - Sugere que atrasos significativos nos pagamentos refletem dificuldades financeiras persistentes ou problemas de gestão financeira que aumentam a probabilidade de futuros inadimplementos. 
 
 ### Outras Observações
 
