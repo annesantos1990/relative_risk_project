@@ -49,7 +49,7 @@ Nesse repositório, além da técnica utilizada para o cálculo do risco relativ
 Parte dos gráficos que estão apresentados na seção de resultados foi feito no Looker. Para acessar o dashboard feito nessa ferramenta, clique no Link abaixo:
 [Clique aqui ou na imagem](https://lookerstudio.google.com/reporting/f2abbd47-882a-4030-9f30-e8dc170a37fd)
 
-[[![Texto Alternativo](https://github.com/annesantos1990/spotify_project/assets/166059836/908e0d4c-dbea-4b4e-8078-6dce037f9265)](https://lookerstudio.google.com/reporting/f2abbd47-882a-4030-9f30-e8dc170a37fd)
+[![looker](https://github.com/annesantos1990/relative_risk_project/assets/166059836/6d4b737d-6ddd-458b-a327-7a4663253273)](https://lookerstudio.google.com/reporting/f2abbd47-882a-4030-9f30-e8dc170a37fd)
 
 
 ### Análise dos dados - Google Colab
