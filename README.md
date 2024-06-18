@@ -1,4 +1,4 @@
-<h1 align="center"> </a> Risk Relative   </h1>
+<h1 align="center"> </a> Credit Risk Analysis   </h1>
 
 **Avaliação do Risco Relativo dos clientes de um Banco**
 
