@@ -57,7 +57,7 @@ Parte dos gráficos que estão apresentados na seção de resultados foi feito n
 Várias análises e visualizações desse projeto foi feito no Google Colab. Para visulizar os códigos utilizados para alguns dos resultados que podem ser vista na seção de resultados, acesse o Notebook: [Clique aqui](https://github.com/annesantos1990/relative_risk_project/blob/main/Projeto_Risco_Relativo_Eslaine.ipynb)
 
 ## Apresentação do projeto
-Para ver os slides com a apresentação do projeto [clique aqui.](https://github.com/annesantos1990/spotify_project/blob/main/Projeto%20Spotify.pdf)
+Para ver os slides com a apresentação do projeto [clique aqui.](https://github.com/annesantos1990/relative_risk_project/blob/main/Risco%20Relativo_2.pdf)
  
 ## Resultados e Discussão
 A análise detalhada desse projeto com os gráficos e discussões pode ser vista em nossa página pública do Notion: [Clique aqui](https://giddy-shamrock-550.notion.site/Resultados-e-Conclus-es-2099a46cca4e4d98adf88ccde83260a1?pvs=4)
