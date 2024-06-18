@@ -152,7 +152,7 @@ Mas aqui, vou fazer um resumo dos principais resultados encontrados:
     
    Na interface, é possível colocar as informações do cliente e ao apertar o botão **Classificar Cliente,** o programa classifica o cliente em “Risco de Inadimplência” ou “Sem Risco de Inadimplência”
     
-   ![interface](https://github.com/annesantos1990/relative_risk_project/assets/166059836/c1c9c667-4b77-448c-8f65-fe820b3ea211)
+![interface_2](https://github.com/annesantos1990/relative_risk_project/assets/166059836/2bf01426-029f-43eb-952c-649f0f1dbd9c)
 
 
 ## LinkedIn
